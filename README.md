@@ -83,6 +83,16 @@ Once the application is running, access it through your web browser at `http://l
 
 Input patient health metrics to receive a heart disease risk prediction.
 
+## Security & DevSecOps
+
+This project integrates automated security controls using GitHub Actions:
+
+- Secrets detection with Gitleaks
+- Static Application Security Testing (SAST) using Bandit and Semgrep
+- Software Composition Analysis (SCA) using Trivy
+
+All checks run automatically on pull requests and commits to main.
+
 ## Model Information
 
 - **Algorithm**: Random Forest Classifier (Optimized)

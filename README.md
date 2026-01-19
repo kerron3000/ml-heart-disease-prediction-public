@@ -70,6 +70,8 @@ docker run -p 8501:8501 heart-iq
 
 or
 
+Public DockerHub url: https://hub.docker.com/r/kerron3000/heart-iq
+
 docker pull kerron3000/heart-iq:v1.2
 
 docker run -p 8501:8501 kerron3000/heart-iq:v1.2

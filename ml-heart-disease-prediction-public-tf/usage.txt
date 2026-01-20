@@ -1,0 +1,11 @@
+terraform init
+terraform apply
+
+-----
+
+aws ecr get-login-password --region us-east-1 \
+| docker login --username AWS --password-stdin <ECR_URL>
+
+docker build -t heart-iq .
+docker tag heart-iq:latest <ECR_URL>:latest
+docker push <ECR_URL>:latest
